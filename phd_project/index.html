@@ -175,125 +175,138 @@
         </section>
       </section>
 <!--  Slide 07 Testing it out -->
-<section>
-  <section>
-    <h1 style="font-size:40px">
-      Testing it out
-    </h1>
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      First generated dataset
-    </h1>
-    <p style="font-size:20px">
-      One population monogenic
-    </p>
-    <ul style="font-size:30px">
-      <li>1000 individuals</li>
-      <li>10000 snps</li>
-      <li>One snp for being a case = 1, (controls = 0)​</li>
-      <li>Implementation: genotype is 0,1,2. We assume equal allele frequencies, p=0.5 which results in genotypic frequencies of
-      0.25 - 0.5 - 0.25, when the individual has 2 on the selected causal snp, he is a case. Expected proportion of cases is
-      0.25</li>
-    </ul>
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      Results
-    </h1>
-    <img class="cropped_succes" data-src="img/11_succes_cluster.png">
-    <p style="font-size:20px">
-      Succes to cluster individuals based on phenotype
-    </p>
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      Second generated dataset
-    </h1>
-    <p style="font-size:20px">
-      Two populations monogenic
-    </p>
-    <ul style="font-size:30px">
-      <li>2000 individuals</li>
-      <li>10000 snps</li>
-      <li>One snp for being a case = 1, (controls = 0)​</li>
-      <li>Implementation: genotype is 0,1,2. We assume equal allele frequencies, p=0.5 which results in genotypic
-        frequencies of
-        0.25 - 0.5 - 0.25, when the individual has 2 on the selected causal snp, he is a case. Expected proportion of cases
-        is
-        0.25</li>
-    </ul>
-    <img class="cropped_data" data-src="img/12_graph_snp_count.png">
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      Results
-    </h1>
-    <img class="cropped_fail" data-src="img/13_fail_cluster.png">
-    <p style="font-size:20px">
-      Fails to catch genotype, instead picks up the population stratification
-    </p>
-  </section>
-</section>
+      <section>
+        <section>
+          <h1 style="font-size:40px">
+            Testing it out
+          </h1>
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            First generated dataset
+          </h1>
+          <p style="font-size:20px">
+            One population monogenic
+          </p>
+          <ul style="font-size:30px">
+            <li>1000 individuals</li>
+            <li>10000 snps</li>
+            <li>One snp for being a case = 1, (controls = 0)​</li>
+            <li>Implementation: genotype is 0,1,2. We assume equal allele frequencies, p=0.5 which results in genotypic frequencies of
+            0.25 - 0.5 - 0.25, when the individual has 2 on the selected causal snp, he is a case. Expected proportion of cases is
+            0.25</li>
+          </ul>
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Results
+          </h1>
+          <img class="cropped_succes" data-src="img/11_succes_cluster.png">
+          <p style="font-size:20px">
+            Succes to cluster individuals based on phenotype
+          </p>
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Second generated dataset
+          </h1>
+          <p style="font-size:20px">
+            Two populations monogenic
+          </p>
+          <ul style="font-size:30px">
+            <li>2000 individuals</li>
+            <li>10000 snps</li>
+            <li>One snp for being a case = 1, (controls = 0)​</li>
+            <li>Implementation: genotype is 0,1,2. We assume equal allele frequencies, p=0.5 which results in genotypic
+              frequencies of
+              0.25 - 0.5 - 0.25, when the individual has 2 on the selected causal snp, he is a case. Expected proportion of cases
+              is
+              0.25</li>
+          </ul>
+          <img class="cropped_data" data-src="img/12_graph_snp_count.png">
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Results
+          </h1>
+          <img class="cropped_fail" data-src="img/13_fail_cluster.png">
+          <p style="font-size:20px">
+            Fails to catch genotype, instead picks up the population stratification
+          </p>
+        </section>
+      </section>
 
-<!--  Slide 08 -->
-<section>
-  <section>
-    <h1 style="font-size:40px">
-      Find population stratification
-    </h1>
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      Cluster the individuals together based on their Genotype alone
-    </h1>
-    <img class="cropped_clu" data-src="img/14_divide_cluster.png">
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      Correct for population stratification
-    </h1>
-    <p style="font-size:20px">
-      Use allele frequencies to update the inputs
-    </p>
-    <img class="cropped_correcpop" data-src="img/15_correc_popstrat.png">
-  </section>
-</section>
+      <!--  Slide 08 -->
+      <section>
+        <section>
+          <h1 style="font-size:40px">
+            Find population stratification
+          </h1>
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Cluster the individuals together based on their Genotype alone
+          </h1>
+          <img class="cropped_clu" data-src="img/14_divide_cluster.png">
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Correct for population stratification
+          </h1>
+          <p style="font-size:20px">
+            Use allele frequencies to update the inputs
+          </p>
+          <img class="cropped_correcpop" data-src="img/15_correc_popstrat.png">
+        </section>
+      </section>
 
-<!--  Slide 09 -->
-<section>
-  <section>
-    <h1 style="font-size:40px">
-      Why stop here?
-    </h1>
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      Using autoencoders to find Linkage Disequilibrium
-    </h1>
-    <p style="font-size:20px">
-      Transposing the snp matrix
-    </p>
-    <img class="cropped_ld" data-src="img/16_ld_finder.png">
-  </section>
-</section>
+      <!--  Slide 09 -->
+      <section>
+        <section>
+          <h1 style="font-size:40px">
+            Why stop here?
+          </h1>
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Using autoencoders to find Linkage Disequilibrium
+          </h1>
+          <p style="font-size:20px">
+            Transposing the snp matrix
+          </p>
+          <img class="cropped_ld" data-src="img/16_ld_finder.png">
+        </section>
+      </section>
 
-<!--  Slide 10 -->
-<section>
-  <section>
-    <h1 style="font-size:40px">
-      Final model
-    </h1>
-  </section>
-  <section>
-    <h1 style="font-size:40px">
-      Using autoencoders to find Linkage Disequilibrium
-    </h1>
-    <img class="cropped_final" data-src="img/17_final_project.png">
-  </section>
-</section>
+      <!--  Slide 10 -->
+      <section>
+        <section>
+          <h1 style="font-size:40px">
+            Final model
+          </h1>
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Using autoencoders to find Linkage Disequilibrium
+          </h1>
+          <img class="cropped_final" data-src="img/17_final_project.png">
+        </section>
+      </section>
 
-<!--  ENDR -->
+      <!--  Slide 10 -->
+      <section>
+        <section>
+          <h1 style="font-size:40px">
+            Thank you for listening
+          </h1>
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Any questions?
+          </h1>
+        </section>
+      </section>
+<!--  END -->
     </div>
   </div>
 
@@ -301,6 +314,7 @@
   <script src="../reveal.js/plugin/notes/notes.js"></script>
   <script src="../reveal.js/plugin/markdown/markdown.js"></script>
   <script src="../reveal.js/plugin/highlight/highlight.js"></script>
+
   <script>
     Reveal.initialize({
       hash: true,
