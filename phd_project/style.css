@@ -1,0 +1,37 @@
+.cropped_gwas {
+    width: 850px; /* width of container */
+    height: 300px; /* height of container */
+    object-fit: cover;
+}
+
+.cropped_prs {
+    width: 500px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+}
+
+.cropped_int {
+    width: 500px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+}
+
+.cropped_calc {
+    width: 200px; /* width of container */
+    height: 150px; /* height of container */
+    object-fit: cover;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 48%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
