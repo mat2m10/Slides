@@ -237,6 +237,15 @@
             Fails to catch genotype, instead picks up the population stratification
           </p>
         </section>
+        <section>
+          <h1 style="font-size:40px">
+            Third generated dataset
+          </h1>
+          <img data-src="img/21_AF_per_pop.png">
+          <p style="font-size:20px">
+            Population is not distinct
+          </p>
+        </section>
       </section>
 
       <!--  Slide 08 -->
@@ -251,6 +260,14 @@
             Cluster the individuals together based on their Genotype alone
           </h1>
           <img data-src="img/14_divide_cluster.png">
+        </section>
+        <section>
+          <h1 style="font-size:40px">
+            Find Allele Frequencies through the output of the AE
+          </h1>
+          <img data-src="img/20_AFfinder.png">
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+          $$ {J(\theta) =\frac{1}{2m} [\sum^m_{i=1}(h_\theta(x^{(i)}) - y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j} $$
         </section>
         <section>
           <h1 style="font-size:40px">
@@ -290,7 +307,7 @@
         </section>
         <section>
           <h1 style="font-size:40px">
-            Using autoencoders to find Linkage Disequilibrium
+            Autoencoders with correction for population stratification and snp clustering
           </h1>
           <img data-src="img/17_final_project.png">
         </section>
@@ -312,7 +329,6 @@
 <!--  END -->
     </div>
   </div>
-
   <script src="../reveal.js/dist/reveal.js"></script>
   <script src="../reveal.js/plugin/notes/notes.js"></script>
   <script src="../reveal.js/plugin/markdown/markdown.js"></script>
