@@ -17,3 +17,8 @@
   clear: both;
   display: table;
 }
+
+/* Slide titles (previously an inline style on every <h1>) */
+.reveal h1 {
+    font-size: 40px;
+}
